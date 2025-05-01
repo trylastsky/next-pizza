@@ -6,4 +6,9 @@ export { SortPopup } from "./top-bar/components/sort-popup";
 export { TopBar } from "./top-bar/TopBar"
 export { FilterCheckbox } from "./filters/components/filter-checkbox";
 export { Filters } from "./filters/filters";
+<<<<<<< HEAD
 export { RangeSlider } from "./filters/components/range-slider";
+=======
+export { RangeSlider } from "./filters/components/range-slider";
+export { CheckboxFiltersGroup } from "./filters/components/checkbox-filters-group"
+>>>>>>> dev
