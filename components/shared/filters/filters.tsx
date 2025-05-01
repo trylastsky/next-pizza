@@ -29,11 +29,7 @@ export const Filters: React.FC<Props> = ({className}) => {
                     <Input type='number' placeholder='0' min={0} max={1000} defaultValue={0}/>
                     <Input type='number' placeholder='100' min={100} max={1000} defaultValue={1000}/>
                 </div>
-<<<<<<< HEAD
-                <RangeSlider min={0} max={1000} step={10} value={[0,1000]}/>
-=======
                 <RangeSlider min={0} max={1000} step={10} value={[0,1000] }/>
->>>>>>> dev
             </div>
 
             {/* Фильтрация ингридиентов */}
