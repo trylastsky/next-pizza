@@ -43,126 +43,95 @@ export const FiltersLayout: React.FC<Props> = ({className}) => {
 
             {/* Фильтрация ингридиентов */}
             <CheckboxFiltersGroup
-            title='Ингредиенты'
-            className='mt-5'
-            limit={6}
-            defaultItems={[
-                {
-                    text:'Сырный соус',
-                    value: '1'
-                },
-                {
-                    text:'Сырный соус',
-                    value: '1'
-                },
-                {
-                    text:'Сырный соус',
-                    value: '1'
-                }
-                ,
-                {
-                    text:'Сырный соус',
-                    value: '1'
-                }
-                ,
-                {
-                    text:'Сырный соус',
-                    value: '1'
-                }
-                ,
-                {
-                    text:'Сырный соус',
-                    value: '1'
-                }
-                
-        ]}
-            items={[
-                {
-                    text:'Сырный соус',
-                    value: '1'
-                },
-                {
-                    text:'Сырный соус',
-                    value: '1'
-                },
-                {
-                    text:'Сырный соус',
-                    value: '1'
-                },
-                {
-                    text:'Сырный соус',
-                    value: '1'
-                }
-                ,
-                {
-                    text:'Сырный соус',
-                    value: '1'
-                }
-                ,
-                {
-                    text:'Сырный соус',
-                    value: '1'
-                }
-                ,
-                {
-                    text:'Сырный соус',
-                    value: '1'
-                },
-                {
-                    text:'Сырный соус',
-                    value: '1'
-                },
-                {
-                    text:'Сырный соус',
-                    value: '1'
-                },
-                {
-                    text:'Сырный соус',
-                    value: '1'
-                }
-                ,
-                {
-                    text:'Сырный соус',
-                    value: '1'
-                }
-                ,
-                {
-                    text:'Сырный соус',
-                    value: '1'
-                }
-                ,
-                {
-                    text:'Сырный соус',
-                    value: '1'
-                },
-                {
-                    text:'Сырный соус',
-                    value: '1'
-                },
-                {
-                    text:'Сырный соус',
-                    value: '1'
-                },
-                {
-                    text:'Сырный соус',
-                    value: '1'
-                }
-                ,
-                {
-                    text:'Сырный соус',
-                    value: '1'
-                }
-                ,
-                {
-                    text:'Сырный соус',
-                    value: '1'
-                }
-                ,
-                {
-                    text:'Сырный соус',
-                    value: '1'
-                }
-        ]}
+                title='Ингредиенты'
+                className='mt-5'
+                limit={6}
+                defaultItems={[
+                    {
+                        text:'Сырный соус',
+                        value: '1'
+                    },
+                    {
+                        text:'Моццарелла',
+                        value: '2'
+                    },
+                    {
+                        text:'Чеснок',
+                        value: '3'
+                    }
+                    ,
+                    {
+                        text:'Солённые огурцы',
+                        value: '4'
+                    }
+                    ,
+                    {
+                        text:'Лук',
+                        value: '5'
+                    }
+                    ,
+                    {
+                        text:'Томаты',
+                        value: '6'
+                    }
+                    
+                ]}
+                items={[
+                    {
+                        text: 'Сырный соус',
+                        value: '1'
+                    },
+                    {
+                        text: 'Моццарелла',
+                        value: '2'
+                    },
+                    {
+                        text: 'Чеснок',
+                        value: '3'
+                    }
+                    ,
+                    {
+                        text: 'Солённые огурцы',
+                        value: '4'
+                    }
+                    ,
+                    {
+                        text: 'Лук',
+                        value: '5'
+                    }
+                    ,
+                    {
+                        text: 'Томаты',
+                        value: '6'
+                    },
+                     {
+                        text: 'Сырный соус',
+                        value: '1'
+                    },
+                    {
+                        text: 'Моццарелла',
+                        value: '2'
+                    },
+                    {
+                        text: 'Чеснок',
+                        value: '3'
+                    }
+                    ,
+                    {
+                        text: 'Солённые огурцы',
+                        value: '4'
+                    }
+                    ,
+                    {
+                        text: 'Лук',
+                        value: '5'
+                    }
+                    ,
+                    {
+                        text: 'Томаты',
+                        value: '6'
+                    }
+                ]}
             />
     </div>)
 }

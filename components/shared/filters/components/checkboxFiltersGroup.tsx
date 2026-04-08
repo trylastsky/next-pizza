@@ -3,6 +3,7 @@
 import React from 'react';
 import { FilterChecboxProps, FilterCheckbox } from './filterCheckbox';
 import { Input } from '@/components/ui';
+import { cn } from '@/lib/utils';
 
 type Item = FilterChecboxProps;
 
@@ -56,11 +57,11 @@ export const CheckboxFiltersGroup: React.FC<Props> = (
                 return (
                     <FilterCheckbox
                         key={i}
-                        value={item.value}
                         text={item.text}
+                        value={item.value}
                         endAdornment={item.endAdornment}
-                        onCheckedChange={(ids) => console.log(ids)}
                         checked={false}
+                        onCheckedChange={(ids) => console.log(ids) }
                     />
                 )
             })}
@@ -68,7 +69,7 @@ export const CheckboxFiltersGroup: React.FC<Props> = (
 
         {items.length > limit && (
             <div className={showAll ? 'border-t border-t-neutral-100 mt-4' : ''}>
-                <button onClick={() => setShowAll(!showAll)} className='text-primary mt-3'>
+                <button onClick={() => setShowAll(!showAll)} className={cn('text-primary mt-3 cursor-pointer')}>
                     {showAll ? 'Скрыть' : '+ Показать все'}
                 </button>
             </div>
