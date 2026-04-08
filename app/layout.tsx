@@ -11,7 +11,7 @@ const nunito = Nunito({
 
 export const metadata: Metadata = {
 	title: "Next Pizza",
-	description: "Pet-project next developer",
+	description: "Pet-project next developer CEO of pizza delivery service",
 };
 
 export default function RootLayout({
@@ -24,7 +24,8 @@ export default function RootLayout({
 			<body className={`${nunito.className} antialiased`}>
 				<main className="min-h-screen">
 					<Header />
-					{children}</main>
+					{children}
+				</main>
 			</body>
 		</html>
 	);

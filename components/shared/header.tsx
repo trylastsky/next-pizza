@@ -14,16 +14,16 @@ export const Header: React.FC<Props> = ({ className }) => {
 	return (
 		<header className={cn("border border-b", className)}>
 			<Container className="flex items-center justify-between py-8">
-				{/* Левая часть */}
+				{/* left part */}
 				<div className="flex items-center gap-4">
 					<Image src="/logo.svg" alt="logo" width={64} height={64} />
 					<div>
 						<h1 className="text-2xl uppercase font-black">Next Pizza</h1>
-						<p className="text-sm text-gray-400 leading-3 ">вкусно и быстро</p>
+						<p className="text-sm text-gray-400 leading-3 ">больше, чем просто еда</p>
 					</div>
 				</div>
 
-				{/* Правая часть */}
+				{/* right part */}
 				<div className="flex items-center gap-3">
 					<Button variant={"outline"} className="flex items-center gap-1">
 						<User size={16} />
@@ -32,7 +32,7 @@ export const Header: React.FC<Props> = ({ className }) => {
 
 					<div>
 						<Button className="group relative">
-							<b>520 $</b>
+							<b>520 ₽</b>
 							<span className="h-full w-[1px] bg-white/30 mx-3" />
 							<div className="flex items-center gap-1 transition duration-300 group-hover:opacity-0">
 								<ShoppingCart size={16} className="relative" strokeWidth={2} />
