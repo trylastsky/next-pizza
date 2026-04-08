@@ -5,6 +5,6 @@ export { Categories } from "./top-bar/components/categories";
 export { SortPopup } from "./top-bar/components/sort-popup";
 export { TopBar } from "./top-bar/TopBar"
 export { FilterCheckbox } from "./filters/components/filter-checkbox";
-export { Filters } from "./filters/filters";
+export { FiltersLayout } from "./filters/filtersLayout";
 export { RangeSlider } from "./filters/components/range-slider";
 export { CheckboxFiltersGroup } from "./filters/components/checkbox-filters-group"

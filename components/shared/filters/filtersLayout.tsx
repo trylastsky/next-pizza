@@ -11,7 +11,7 @@ interface Props {
 const MIN_FILTER_PRICE = 0;
 const MAX_FILTER_PRICE = 1000;
 
-export const Filters: React.FC<Props> = ({className}) => {
+export const FiltersLayout: React.FC<Props> = ({className}) => {
     const [priceFilterArray, setPriceFilterArray] = React.useState<number[]>([MIN_FILTER_PRICE, MAX_FILTER_PRICE]);
 
     return(<div className={className}>

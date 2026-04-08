@@ -1,7 +1,9 @@
-import { Container } from "@/components/shared";
-import { Title } from "@/components/shared";
-import { TopBar } from "@/components/shared";
-import { Filters } from "@/components/shared";
+import {
+	Container,
+	Title,
+	TopBar,
+	FiltersLayout
+} from "@/components/shared";
 
 export default function Home() {
 	return (
@@ -16,7 +18,7 @@ export default function Home() {
 				<div className="flex gap-[60px]">
 					{/* Фильтрация */}
 					<div className="w-[250px]">
-						<Filters />
+						<FiltersLayout />
 					</div>
 
 					{/* Список товаров */}
