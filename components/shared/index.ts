@@ -1,10 +1,10 @@
 export { Container } from "./container";
 export { Header } from "./header";
 export { Title } from "./title";
-export { Categories } from "./top-bar/components/categories";
-export { SortPopup } from "./top-bar/components/sort-popup";
-export { TopBar } from "./top-bar/TopBar"
-export { FilterCheckbox } from "./filters/components/filter-checkbox";
+export { Categories } from "./topBar/components/categories";
+export { SortPopup } from "./topBar/components/sortPopup";
+export { TopBar } from "./topBar/topBar"
+export { FilterCheckbox } from "./filters/components/filterCheckbox";
 export { FiltersLayout } from "./filters/filtersLayout";
 export { RangeSlider } from "./filters/components/range-slider";
-export { CheckboxFiltersGroup } from "./filters/components/checkbox-filters-group"
+export { CheckboxFiltersGroup } from "./filters/components/checkboxFiltersGroup"

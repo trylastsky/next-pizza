@@ -1,13 +1,15 @@
 'use client'
 
 import React from 'react';
-import { FilterChecboxProps, FilterCheckbox } from './filter-checkbox';
+import { FilterChecboxProps, FilterCheckbox } from './filterCheckbox';
 import { Input } from '@/components/ui';
+
+type Item = FilterChecboxProps;
 
 interface Props {
     title: string;
-    items: FilterChecboxProps[];
-    defaultItems: FilterChecboxProps[];
+    items: Item[];
+    defaultItems: Item[];
     limit?: number;
     searchInputPlaceholder?: string;
     onChange?: (values: string[]) => void;
