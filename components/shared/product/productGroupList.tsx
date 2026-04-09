@@ -7,11 +7,12 @@ import { useCategoryStore } from '@/store/category';
 import { hashSlug } from '@/lib/utils';
 
 interface Props {
-  title: string;
-  categoryId: number;
-  products: any[];
-  className?: string;
-  itemClassName?: string;
+    title: string;
+    categoryId: number;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    products: any[];
+    className?: string;
+    itemClassName?: string;
 }
 
 export const ProductGroupList: React.FC<Props> = (
@@ -19,7 +20,7 @@ export const ProductGroupList: React.FC<Props> = (
         title,
         products,
         className,
-        categoryId 
+        categoryId
     }
 ) => {
     const setActiveCategoryId = useCategoryStore((state) => state.setActiveCategoryId);
@@ -34,20 +35,21 @@ export const ProductGroupList: React.FC<Props> = (
         }
     }, [categoryId, intersection, setActiveCategoryId]);
 
-  return (
-    <div className={className} id={hashSlug(title)} ref={intersectionRef}>
-      <Title text={title} size="lg" className="font-extrabold mb-5" />
-      <div className="grid grid-cols-3 gap-[50px]">
-        {products.map((product, i) => (
-          <ProductCard
-            key={product.id}
-            name={product.name}
-            imageUrl={product.imageUrl}
-            price={product.items[0].price}
-            count={i % 2}
-          />
-        ))}
-      </div>
-    </div>
-  );
+    return (
+        <div className={className} id={hashSlug(title)} ref={intersectionRef}>
+            <Title text={title} size="lg" className="font-extrabold mb-5" />
+            <div className="grid grid-cols-3 gap-[50px]">
+                {products.map((product) => (
+                    <ProductCard
+                        key={product.id}
+                        id={product.id}
+                        name={product.name}
+                        imageUrl={product.imageUrl}
+                        price={product.items[0].price}
+                    // count={i % 2}
+                    />
+                ))}
+            </div>
+        </div>
+    );
 };
