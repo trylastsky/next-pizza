@@ -3,6 +3,8 @@
 import React from 'react';
 import { useIntersection } from 'react-use';
 import { ProductCard, Title } from '..';
+import { useCategoryStore } from '@/store/category';
+import { hashSlug } from '@/hooks/hasSlug';
 
 interface Props {
   title: string;
@@ -17,8 +19,10 @@ export const ProductGroupList: React.FC<Props> = (
         title,
         products,
         className,
-        categoryId }
+        categoryId 
+    }
 ) => {
+    const setActiveCategoryId = useCategoryStore((state) => state.setActiveCategoryId);
     const intersectionRef = React.useRef<HTMLDivElement>(null);
     const intersection = useIntersection(intersectionRef as React.RefObject<HTMLElement>, {
         threshold: 0.4,
@@ -26,12 +30,12 @@ export const ProductGroupList: React.FC<Props> = (
 
     React.useEffect(() => {
         if (intersection?.isIntersecting) {
-            console.log(title, categoryId);
+            setActiveCategoryId(categoryId);
         }
-    }, [categoryId, intersection, title]);
+    }, [categoryId, intersection, setActiveCategoryId]);
 
   return (
-    <div className={className} id={title} ref={intersectionRef}>
+    <div className={className} id={hashSlug(title)} ref={intersectionRef}>
       <Title text={title} size="lg" className="font-extrabold mb-5" />
       <div className="grid grid-cols-3 gap-[50px]">
         {products.map((product, i) => (
