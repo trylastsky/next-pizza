@@ -1,8 +1,7 @@
 'use client';
 
-import { cn } from "@/lib/utils";
+import { cn, hashSlug } from "@/lib/utils";
 import { useCategoryStore } from "@/store/category";
-import { hashSlug } from "@/hooks/hasSlug";
 import React from "react";
 
 interface Props {
